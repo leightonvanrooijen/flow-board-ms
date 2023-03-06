@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  flow-dynamodb:
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+    image: "amazon/dynamodb-local:latest"
+    user: "dynamodblocal"
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./dockerVolume/dynamodb:/home/dynamodblocal/data"
+    working_dir: /home/dynamodblocal

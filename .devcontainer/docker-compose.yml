@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  flow-api:
+    build: .
+    user: "node"
+    ports:
+      - 4000:4000
+    working_dir: /app
+    volumes:
+      - ..:/app
+    environment:
+      - NODE_ENV=dev
+      - AWS_ACCESS_KEY_ID=abcd
+      - AWS_SECRET_ACCESS_KEY=abcd
+      - AWS_REGION=local
+    command: sleep infinity

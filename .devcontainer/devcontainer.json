@@ -1,0 +1,11 @@
+{
+  "name": "Flow API",
+  "dockerComposeFile": [
+    "./docker-compose.yml",
+    "./docker-compose-dynamodb.yml"
+  ],
+  "service": "flow-api",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "remoteUser": "node"
+}

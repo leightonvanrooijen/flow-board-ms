@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "preserveWatchOutput": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "target": "ESNext"
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.micro.ts",
+    "**/*.integration.ts",
+  ]
+}
